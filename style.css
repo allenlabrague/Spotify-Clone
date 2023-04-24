@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Tilt+Warp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 0.8rem;
+}
+
+h3 {
+    font-size: 1em;
+    opacity: 0.6;
+    font-weight: 200;
+    margin-bottom: 0.5em;
+}
+
+body {
+    max-width: 100%;
+    background-color: rgb(29, 29, 29);
+}
+
+.aside {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.aside-content {
+    background-color: black;
+    max-width: 15%;
+    color: white;
+    padding: 1.5em 1.6em;
+    padding-bottom: 0.6em;
+}
+
+.aside-top-content {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 2em;
+}
+
+.Spotify {
+    font-size: 2.5em;
+}
+
+.aside-middle-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-display,
+.search-display,
+.library-display {
+    display: inherit;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1.5em;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.icons {
+    font-size: 1.3rem;
+}
+
+.aside-bottom-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.plus-sign-content,
+.heart-sign-content {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 1em;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.plus-sign,
+.heart-sign {
+    font-size: 0.7rem;
+    background-color: rgb(185, 185, 185);
+    padding: 0.3em 0.6em;
+    color: black;
+    border-radius: 2px;
+}
+
+.heart-sign {
+    background: rgb(60, 40, 238);
+    background: linear-gradient(90deg, rgba(60, 40, 238, 1) 0%, rgba(202, 198, 255, 1) 100%);
+    color: rgb(185, 185, 185);
+}
+
+.hierarchy-line {
+    opacity: 0.4;
+    background-color: blue;
+    border-bottom: 1px solid gray;
+    margin: 0.5em 0;
+}
+
+.hierarchy-bottom-content {
+    margin-top: 1em;
+    margin-bottom: 10.8em;
+}
+
+.aside-install-app {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.aside-install-app:hover,
+.home-display:hover,
+.search-display:hover,
+.library-display:hover,
+.plus-sign-content:hover,
+.heart-sign-content:hover {
+    opacity: 1;
+}
+
+.circle-down {
+    font-size: 1.4em;
+}
+
+.bottom-fixed-position {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.267);
+    background-color: #181818;
+    color: white;
+}
+
+.bottom-container {
+    width: 100%;
+    padding: 2em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexbox-left-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.flexbox-left-inside-content {
+    font-size: 0.6em;
+}
+
+.heart,
+.tv {
+    opacity: 0.5;
+}
+
+.heart {
+    margin-left: 1em;
+}
+
+.flexbox-middle-content-buttom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    margin-left: 5em;
+}
+
+.third-child {
+    opacity: 1;
+    font-size: 2.5rem;
+}
+
+.button-play {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.button-loader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.button-loader p {
+    font-size: 0.7em;
+    opacity: 0.6;
+}
+
+.custom-volume1 {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgb(168, 168, 168);
+    border-radius: 50px;
+    width: 500px;
+    height: 4px;
+    margin-right: 5px;
+}
+
+.custom-volume1::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+.flexbox-right-content {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icons-bottom {
+    opacity: 0.6;
+}
+
+.custom-volume {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white;
+    border-radius: 50px;
+    width: 50%;
+    height: 4px;
+    margin-right: 5px;
+}
+
+.custom-volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+.flexbox-top-content {
+    background-color: rgb(80, 136, 48);
+    z-index: 10;
+    padding: 0.5em 1em;
+    position: fixed;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+.top-left-button {
+    font-size: 2em;
+}
+
+.top-left-button i:last-child {
+    margin-left: 0.2em;
+    opacity: 0.6;
+}
+
+.top-left-content {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.explore-premium {
+    color: white;
+    border: 1px solid gray;
+    padding: 0.5em 1em;
+    border-radius: 50px;
+}
+
+.explore-premium h2 {
+    font-size: 0.8em;
+}
+
+.top-right-settings {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 0.5em 2.5em;
+    width: 47%;
+    gap: 0.6em;
+    border-radius: 50px;
+}
+
+.top-right-settings-images {
+    position: absolute;
+    display: flex;
+    left: 2px;
+}
+
+.images {
+    width: 20%;
+    border-radius: 100%;
+}
+
+.flexbox-middle-content {
+    display: flex;
+    padding: 1.5em 0.6em;
+    background-color: rgb(80, 136, 48);
+    box-shadow: -1px -76px 98px 5px rgba(0, 0, 0, 0.37) inset;
+    -webkit-box-shadow: -1px -76px 98px 5px rgba(0, 0, 0, 0.37) inset;
+    -moz-box-shadow: -1px -76px 98px 5px rgba(0, 0, 0, 0.37) inset;
+}
+
+.flex-middle-content-inside {
+    z-index: 20;
+    display: flex;
+    margin-left: 17%;
+    margin-top: 4em;
+    align-items: center;
+}
+
+.central-cee {
+
+    width: 30%;
+    box-shadow: 0px 0px 71px -9px rgba(0, 0, 0, 0.92);
+    -webkit-box-shadow: 0px 0px 71px -9px rgba(0, 0, 0, 0.92);
+    -moz-box-shadow: 0px 0px 71px -9px rgba(0, 0, 0, 0.92);
+    margin-right: 1.5em;
+}
+
+.flexbox-middle-right-content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 2em;
+}
+
+.daily-mix {
+    font-size: 5.5rem;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 500;
+}
+
+.artist-name {
+    opacity: 0.6;
+    margin-top: 1em;
+    margin-bottom: 0.9em;
+    font-weight: 100;
+}
+
+.flexbox-middle-right-inside-content {
+    display: flex;
+    align-items: center;
+}
+
+.spotify {
+    color: #1ed760;
+    font-size: 1.7rem;
+    margin-right: 0.2em;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.spotify-song {
+    font-weight: 100;
+}
+
+.about-2-hr {
+    opacity: 0.6;
+}
+
+.flexbox-bottom-content {
+    padding: 1.5em 0.6em;
+    background-color: rgb(29, 29, 29);
+}
+
+.flexbox-bottom-content-inside {
+    margin-left: 17%;
+}
+
+.flexbox-top-content-inside {
+    display: flex;
+    align-items: center;
+
+}
+
+.circle-play {
+    font-size: 3.5rem;
+    color: #1ed760;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.heart {
+    font-size: 2rem;
+    color: white;
+}
+
+.ellipsis {
+    font-size: 1.7rem;
+    color: white;
+    opacity: 0.4;
+    margin-left: 1em;
+}
+
+.flexbox-main-content {
+    background-color: rgb(29, 29, 29);
+
+}
+
+.flexbox-main-content-inside {
+    margin-left: 17%;
+    color: white;
+
+}
+
+.flexbox-bottom-title {
+    color: rgba(223, 223, 223, 0.678);
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    padding: 0.4em 1em;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.288);
+    width: 1280px;
+    margin-left: 1em;
+    position: sticky;
+    top: 64px;
+    background-color: rgb(29, 29, 29);
+    z-index: 200;
+}
+
+.album {
+    margin-left: 13em;
+}
+
+.clock {
+    margin-right: 2em;
+}
+
+.left,
+.right {
+    background-color: white;
+    border-radius: 50px;
+}
+
+.flexbox-bottom-recent-playlist {
+    margin-top: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -10;
+}
+
+.recent-pictures {
+    display: flex;
+    align-items: center;
+}
+
+.recent-pictures>p {
+    margin-left: 2em;
+    margin-right: 1em;
+    opacity: 0.8;
+}
+
+.central-cee-recent {
+    width: 18%;
+    margin-right: 1em;
+}
+
+.recent-posts {
+    display: flex;
+}
+
+.recent-posts>i {
+    display: flex;
+    align-items: center;
+    background-color: rgb(204, 204, 204);
+    font-size: 0.4rem;
+    color: black;
+    border-radius: 3px;
+    padding: 2px 7px;
+    margin-right: 1em;
+}
+
+.recent-posts>p {
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+
+.playlist-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist-name>p {
+    font-size: 0.9em;
+    margin-bottom: 0.4em;
+}
+
+.doja {
+    font-size: 0.8em;
+    opacity: 0.6;
+    margin-right: 1.5em;
+}
+
+.doja1 {
+    position: relative;
+    right: 3em;
+}
